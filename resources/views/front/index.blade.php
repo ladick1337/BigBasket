@@ -33,7 +33,7 @@
     <div class="header-top">
         <div class="container">
             <div class="header-top-wrapper">
-                <a href="#"><img class="header-top__logo" src="{{asset('myassets')}}/img/logo_main.png" alt=""></a>
+                <a href="/"><img class="header-top__logo" src="{{asset('myassets')}}/img/logo_main.png" alt=""></a>
                 <div class="header-top-links">
                     <a class="header-top-links__phone"  href="tel:+0444667446">044 466 74 46</a>
                     <div class="header-top-links__links">
@@ -72,20 +72,20 @@
 
 
 
-                        <li><a class="header-main-nav__link" href="catalog.html">eBay</a></li>
-                        <li><a class="header-main-nav__link" href="amazon.html">Amazon</a></li>
-                        <li><a class="header-main-nav__link" href="tarif.html">Цены</a></li>
-                        <li><a class="header-main-nav__link" href="mf.html">MF</a></li> <!-- header-main-nav__link--active -->
-                        <li><a class="header-main-nav__link" href="shops.html">Магазины</a></li>
-                        <li><a class="header-main-nav__link" href="contacts.html">Контакты</a></li>
+                        <li><a class="header-main-nav__link" href="{{route('ebay')}}">eBay</a></li>
+                        <li><a class="header-main-nav__link" href="{{route('amazon')}}">Amazon</a></li>
+                        <li><a class="header-main-nav__link" href="{{route('tarif')}}">Цены</a></li>
+                        <li><a class="header-main-nav__link" href="{{route('mf')}}">MF</a></li> <!-- header-main-nav__link--active -->
+                        <li><a class="header-main-nav__link" href="{{route('shops')}}">Магазины</a></li>
+                        <li><a class="header-main-nav__link" href="{{route('contacts')}}">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="header-main-panel">
                     <div class="header-main-panel__links">
-                        <a href="calculate.html" class="link-calc">Расчет доставки</a>
-                        <a href="faq.html" class="link-support">Помощь</a>
+                        <a href="{{route('calculate')}}" class="link-calc">Расчет доставки</a>
+                        <a href="{{route('faq')}}" class="link-support">Помощь</a>
                     </div>
-                    <a href="open-shop.html" class="btn btn--orange">Заказ по ссылке</a>
+                    <a href="{{route('openShop')}}" class="btn btn--orange">Заказ по ссылке</a>
                 </div>
             </div>
         </div>

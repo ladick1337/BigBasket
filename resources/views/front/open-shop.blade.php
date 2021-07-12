@@ -10,14 +10,14 @@
 <!--     <link rel="stylesheet" href="css/fonts.css">
     <script src="js/jquery-3.4.1.min.js"></script>
         <link rel="stylesheet" href="css/owl.carousel.min.css"> -->
-        <link rel="preload" href="fonts/ProximaNova-Black.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="fonts/ProximaNova-Light.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="fonts/ProximaNova-Regular.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="fonts/ProximaNova-Extrabld.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="css/jcar.css">
-     <link rel="stylesheet" href="css/owl.carousel.min.css">
-      <link rel="stylesheet" href="css/owl.theme.default.min.css">
-       <link rel="stylesheet" href="css/app.css">
+        <link rel="preload" href="{{asset('myassets')}}/fonts/ProximaNova-Black.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="{{asset('myassets')}}/fonts/ProximaNova-Light.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="{{asset('myassets')}}/fonts/ProximaNova-Regular.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="{{asset('myassets')}}/fonts/ProximaNova-Extrabld.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="{{asset('myassets')}}/css/jcar.css">
+     <link rel="stylesheet" href="{{asset('myassets')}}/css/owl.carousel.min.css">
+      <link rel="stylesheet" href="{{asset('myassets')}}/css/owl.theme.default.min.css">
+       <link rel="stylesheet" href="{{asset('myassets')}}/css/app.css">
 </head>
 
 <body>
@@ -26,7 +26,7 @@
     <div class="header-top">
         <div class="container">
             <div class="header-top-wrapper">
-                <a href="#"><img class="header-top__logo" src="img/logo_main.png" alt=""></a>
+                <a href="/"><img class="header-top__logo" src="{{asset('myassets')}}/img/logo_main.png" alt=""></a>
                 <div class="header-top-links">
                     <a class="header-top-links__phone"  href="tel:+0444667446">044 466 74 46</a>
                     <div class="header-top-links__links">
@@ -47,7 +47,7 @@
                     <div class="toggle__2"></div>
                     <div class="toggle__3"></div>
                 </div>
-                <img class="header-mobile__logo" src="img/mobile_logo_main.webp" alt="">
+                <img class="header-mobile__logo" src="{{asset('myassets')}}/img/mobile_logo_main.webp" alt="">
 
                 <a href="#" class="btn btn--orange">Заказать</a>
             </div>
@@ -59,20 +59,22 @@
             <div class="header-main-wrapper">
                 <nav class="header-main-nav">
                     <ul>
-                        <li><a class="header-main-nav__link" href="catalog.html">eBay</a></li>
-                        <li><a class="header-main-nav__link" href="amazon.html">Amazon</a></li>
-                        <li><a class="header-main-nav__link" href="tarif.html">Цены</a></li>
-                        <li><a class="header-main-nav__link" href="mf.html">MF</a></li> <!-- header-main-nav__link--active -->
-                        <li><a class="header-main-nav__link header-main-nav__link--active" href="shops.html">Магазины</a></li>
-                        <li><a class="header-main-nav__link" href="contacts.html">Контакты</a></li>
+                        
+
+                        <li><a class="header-main-nav__link" href="{{route('ebay')}}">eBay</a></li>
+                        <li><a class="header-main-nav__link" href="{{route('amazon')}}">Amazon</a></li>
+                        <li><a class="header-main-nav__link" href="{{route('tarif')}}">Цены</a></li>
+                        <li><a class="header-main-nav__link" href="{{route('mf')}}">MF</a></li> <!-- header-main-nav__link--active -->
+                        <li><a class="header-main-nav__link header-main-nav__link--active" href="{{route('shops')}}">Магазины</a></li>
+                        <li><a class="header-main-nav__link" href="{{route('contacts')}}">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="header-main-panel">
                     <div class="header-main-panel__links">
-                        <a href="calculate.html" class="link-calc">Расчет доставки</a>
-                        <a href="faq.html" class="link-support">Помощь</a>
+                        <a href="{{route('calculate')}}" class="link-calc">Расчет доставки</a>
+                        <a href="{{route('faq')}}" class="link-support">Помощь</a>
                     </div>
-                    <a href="open-shop.html" class="btn btn--orange">Заказ по ссылке</a>
+                    <a href="{{route('openShop')}}" class="btn btn--orange">Заказ по ссылке</a>
                 </div>
             </div>
         </div>
@@ -95,7 +97,7 @@
   <main class="container shop-content">
     <section class="shop-first">
       <div class="h1-block">
-        <h1 class="title title-open-shop ta-left">www.romwe.com доставка в Украину<img src="img/shop-logo.png" alt=""></h1>
+        <h1 class="title title-open-shop ta-left">www.romwe.com доставка в Украину<img src="{{asset('myassets')}}/img/shop-logo.png" alt=""></h1>
         <img src="" alt="" class="shop-logo">
       </div>
       <h2 class=".price-list-container__title"></h2>
@@ -105,8 +107,8 @@
         <li>2. Скопировать на нем ссылку на нужный товар(ы) и вставить в форму ниже:</li>
       </ol>
       <div class="row">
-        <img src="img/shop-link-arrow.png" class="for-desc" alt="">
-        <img src="img/mob-arrr.png" class="for-xs" alt="">
+        <img src="{{asset('myassets')}}/img/shop-link-arrow.png" class="for-desc" alt="">
+        <img src="{{asset('myassets')}}/img/mob-arrr.png" class="for-xs" alt="">
         <div class="inner">
           <form action="">
             <input type="text" placeholder="Вставьте ссылку, например https://www.amazon.com/dp/B0844JK.....">
@@ -116,15 +118,15 @@
             <p>Отправьте нам ссылку на товар и мы выставим вам счет с учетом доставки в Украину и всеми расходами. После оплаты заказа, мы выкупим товары в этом магазине с доставкой на наш зарубежный склад, а оттуда в Украину. </p>
             <div class="flex">
               <div class="item">
-                <div class="white-round"><img src="img/icon-it1.svg" alt=""></div>
+                <div class="white-round"><img src="{{asset('myassets')}}/img/icon-it1.svg" alt=""></div>
                 <span>Доставка в Украину 2-4 недели</span>
               </div>
               <div class="item">
-                <div class="white-round"><img src="img/icon-it2.svg" alt=""></div>
+                <div class="white-round"><img src="{{asset('myassets')}}/img/icon-it2.svg" alt=""></div>
                 <span>Доставка 4-9 $/кг</span>
               </div>
               <div class="item">
-                <div class="white-round"><img src="img/icon-it3.svg" alt=""></div>
+                <div class="white-round"><img src="{{asset('myassets')}}/img/icon-it3.svg" alt=""></div>
                 <span>100% гарантия доставки или возврата средств</span>
               </div>
             </div>
@@ -152,7 +154,7 @@
       <div class="flex-cols">
         <div class="col">
           <div class="img-tit">
-            <div><img src="img/weight1.svg" alt=""><span>Одежда</span></div>
+            <div><img src="{{asset('myassets')}}/img/weight1.svg" alt=""><span>Одежда</span></div>
             <table>
               <tr>
                 <td>Джинсы </td>
@@ -183,7 +185,7 @@
         </div>
         <div class="col">
           <div class="img-tit">
-            <div><img src="img/weight2.svg" alt=""><span>Обувь</span></div>
+            <div><img src="{{asset('myassets')}}/img/weight2.svg" alt=""><span>Обувь</span></div>
             <table>
               <tr>
                 <td>Тапки</td>
@@ -214,7 +216,7 @@
         </div>
         <div class="col">
           <div class="img-tit">
-            <div><img src="img/weight3.svg" alt=""><span>Смартфоны и<br>планшеты </span></div>
+            <div><img src="{{asset('myassets')}}/img/weight3.svg" alt=""><span>Смартфоны и<br>планшеты </span></div>
             <table>
               <tr>
                 <td>Смартфон</td>
@@ -245,7 +247,7 @@
         </div>
         <div class="col">
           <div class="img-tit">
-            <div><img src="img/weight4.svg" alt=""><span>Электроника</span></div>
+            <div><img src="{{asset('myassets')}}/img/weight4.svg" alt=""><span>Электроника</span></div>
             <table>
               <tr>
                 <td>Ноутбук 13”</td>
@@ -358,7 +360,7 @@
     <div class="container">
         <div class="footer-wrapper">
             <div class="footer-coll footer-coll--logo-coll">
-                <img  class="footer-coll__logo" src="img/logo_footer.png" alt="">
+                <img  class="footer-coll__logo" src="{{asset('myassets')}}/img/logo_footer.png" alt="">
                 <!-- <p class="footer-coll__copyright">Дизайн сайта: FRONTMEN</p> -->
                 <p class="footer-coll__copyright">© 2009-2021 Big-Basket Все права защищены</p>
             </div>
@@ -403,7 +405,7 @@
       <h2>Авторизация</h2>
       <form action="">
         <input type="email" required placeholder="Ваш e-mail:">
-        <input type="password" required placeholder=Пароль">
+        <input type="password" required placeholder="Пароль">
         <a href="">Забыли пароль?</a>
         <a href=""> Регистрация</a>
         <button type="submit">Войти</button>
@@ -424,7 +426,7 @@
         <input type="email" required placeholder="ФИО:">
         <input type="email" required placeholder="Ваш телефон:">
         <input type="email" required placeholder="Ваш e-mail:">
-        <input type="password" required placeholder=Пароль">
+        <input type="password" required placeholder="Пароль">
         <div>
           <input type="checkbox" id="cb1"> <label for="cb1">Я согласен с <a href="#">Условиями пользованием сорвиса</a></label>
         </div>
@@ -462,9 +464,9 @@
 </script>
 <!--Скрипт для цен конец -->
 
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.knob.min.js"></script>
-    <script src="js/jquery.redcountdown.js"></script>
+    <script src="{{asset('myassets')}}/js/owl.carousel.min.js"></script>
+    <script src="{{asset('myassets')}}/js/jquery.knob.min.js"></script>
+    <script src="{{asset('myassets')}}/js/jquery.redcountdown.js"></script>
     <script>
         $(document).ready(function() {
             var nowDate = new Date();
@@ -509,9 +511,9 @@ document.querySelector('.nextWebinar').textContent = str;
         $('.js-select').nSelect();
     </script>
     <script src="js/jq-car.js"></script> -->
-<script src="js/main.js"></script>
+<script src="{{asset('myassets')}}/js/main.js"></script>
   <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
-<script src="js/jquery.flexslider.js"></script>
+<script src="{{asset('myassets')}}/js/jquery.flexslider.js"></script>
   <script type="text/javascript">
     $(function(){
       SyntaxHighlighter.all();

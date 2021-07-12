@@ -9,14 +9,14 @@
 <!--     <link rel="stylesheet" href="css/fonts.css">
     <script src="js/jquery-3.4.1.min.js"></script>
         <link rel="stylesheet" href="css/owl.carousel.min.css"> -->
-        <link rel="preload" href="fonts/ProximaNova-Black.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="fonts/ProximaNova-Light.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="fonts/ProximaNova-Regular.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="fonts/ProximaNova-Extrabld.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="css/jcar.css">
-     <link rel="stylesheet" href="css/owl.carousel.min.css">
-      <link rel="stylesheet" href="css/owl.theme.default.min.css">
-       <link rel="stylesheet" href="css/app.css">
+        <link rel="preload" href="{{asset('myassets')}}/fonts/ProximaNova-Black.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="{{asset('myassets')}}/fonts/ProximaNova-Light.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="{{asset('myassets')}}/fonts/ProximaNova-Regular.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="{{asset('myassets')}}/fonts/ProximaNova-Extrabld.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="{{asset('myassets')}}/css/jcar.css">
+     <link rel="stylesheet" href="{{asset('myassets')}}/css/owl.carousel.min.css">
+      <link rel="stylesheet" href="{{asset('myassets')}}/css/owl.theme.default.min.css">
+       <link rel="stylesheet" href="{{asset('myassets')}}/css/app.css">
 </head>
 
 
@@ -27,7 +27,7 @@
     <div class="header-top">
         <div class="container">
             <div class="header-top-wrapper">
-                <a href="#"><img class="header-top__logo" src="img/logo_main.png" alt=""></a>
+                <a href="/"><img class="header-top__logo" src="{{asset('myassets')}}/img/logo_main.png" alt=""></a>
                 <div class="header-top-links">
                     <a class="header-top-links__phone"  href="tel:+0444667446">044 466 74 46</a>
                     <div class="header-top-links__links">
@@ -48,7 +48,7 @@
                     <div class="toggle__2"></div>
                     <div class="toggle__3"></div>
                 </div>
-                <img class="header-mobile__logo" src="img/mobile_logo_main.webp" alt="">
+                <img class="header-mobile__logo" src="{{asset('myassets')}}/img/mobile_logo_main.webp" alt="">
 
                 <a href="#" class="btn btn--orange">Заказать</a>
             </div>
@@ -60,20 +60,25 @@
             <div class="header-main-wrapper">
                 <nav class="header-main-nav">
                     <ul>
-                        <li><a class="header-main-nav__link" href="catalog.html">eBay</a></li>
-                        <li><a class="header-main-nav__link" href="amazon.html">Amazon</a></li>
-                        <li><a class="header-main-nav__link header-main-nav__link--active" href="tarif.html">Цены</a></li>
-                        <li><a class="header-main-nav__link" href="mf.html">MF</a></li> <!-- header-main-nav__link--active -->
-                        <li><a class="header-main-nav__link" href="shops.html">Магазины</a></li>
-                        <li><a class="header-main-nav__link" href="contacts.html">Контакты</a></li>
+
+
+
+
+
+                        <li><a class="header-main-nav__link" href="{{route('ebay')}}">eBay</a></li>
+                        <li><a class="header-main-nav__link" href="{{route('amazon')}}">Amazon</a></li>
+                        <li><a class="header-main-nav__link header-main-nav__link--active" href="{{route('tarif')}}">Цены</a></li>
+                        <li><a class="header-main-nav__link" href="{{route('mf')}}">MF</a></li> <!-- header-main-nav__link--active -->
+                        <li><a class="header-main-nav__link" href="{{route('shops')}}">Магазины</a></li>
+                        <li><a class="header-main-nav__link" href="{{route('contacts')}}">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="header-main-panel">
                     <div class="header-main-panel__links">
-                        <a href="calculate.html" class="link-calc">Расчет доставки</a>
-                        <a href="faq.html" class="link-support">Помощь</a>
+                        <a href="{{route('calculate')}}" class="link-calc">Расчет доставки</a>
+                        <a href="{{route('faq')}}" class="link-support">Помощь</a>
                     </div>
-                    <a href="open-shop.html" class="btn btn--orange">Заказ по ссылке</a>
+                    <a href="{{route('openShop')}}" class="btn btn--orange">Заказ по ссылке</a>
                 </div>
             </div>
         </div>
@@ -87,28 +92,28 @@
                 <h2 class="price-list-container__title price-list-container__title--icon price-list-container__title--auto-icon">Доставка в Украину <span>1</span></h2>
                 <div class="price-list first-price">
                     <div class="price-item price-item--with-icon">
-                        <p class="price-item__wrap-icon"><img class="price-item__icon" src="img/flag/usa.webp" alt=""> <span class="price-item__desc">из США авиа:</span></p> <span class="price-item__price">9$/кг <i>(или 1$ за каждые 100 грамм)</i></span>
+                        <p class="price-item__wrap-icon"><img class="price-item__icon" src="{{asset('myassets')}}/img/flag/usa.webp" alt=""> <span class="price-item__desc">из США авиа:</span></p> <span class="price-item__price">9$/кг <i>(или 1$ за каждые 100 грамм)</i></span>
                     </div>
                     <div class="price-item price-item--with-icon">
-                        <p class="price-item__wrap-icon"><img class="price-item__icon" src="img/flag/usa.webp" alt=""> <span class="price-item__desc">из США морем 50 дней:</span></p> <span class="price-item__price">4$/кг</span>
+                        <p class="price-item__wrap-icon"><img class="price-item__icon" src="{{asset('myassets')}}/img/flag/usa.webp" alt=""> <span class="price-item__desc">из США морем 50 дней:</span></p> <span class="price-item__price">4$/кг</span>
                     </div>
                     <div class="price-item price-item--with-icon">
-                        <p class="price-item__wrap-icon"><img class="price-item__icon" src="img/flag/usa.webp" alt=""> <span class="price-item__desc">из США морем 30 дней:</span></p> <span class="price-item__price">6$/кг</span>
+                        <p class="price-item__wrap-icon"><img class="price-item__icon" src="{{asset('myassets')}}/img/flag/usa.webp" alt=""> <span class="price-item__desc">из США морем 30 дней:</span></p> <span class="price-item__price">6$/кг</span>
                     </div>
                     <div class="price-item price-item--with-icon">
-                        <p class="price-item__wrap-icon"><img class="price-item__icon" src="img/flag/germany.webp" alt=""> <span class="price-item__desc">из Германии:</span></p> <span class="price-item__price">3€/кг <i>(минимум 6€)</i></span>
+                        <p class="price-item__wrap-icon"><img class="price-item__icon" src="{{asset('myassets')}}/img/flag/germany.webp" alt=""> <span class="price-item__desc">из Германии:</span></p> <span class="price-item__price">3€/кг <i>(минимум 6€)</i></span>
                     </div>
                     <div class="price-item price-item--with-icon">
-                        <p class="price-item__wrap-icon"><img class="price-item__icon" src="img/flag/uk.webp" alt=""> <span class="price-item__desc">из Британии:</span></p> <span class="price-item__price">4£/кг <i>(минимум 7£)</i></span>
+                        <p class="price-item__wrap-icon"><img class="price-item__icon" src="{{asset('myassets')}}/img/flag/uk.webp" alt=""> <span class="price-item__desc">из Британии:</span></p> <span class="price-item__price">4£/кг <i>(минимум 7£)</i></span>
                     </div>
                     <div class="price-item price-item--with-icon">
-                        <p class="price-item__wrap-icon"><img class="price-item__icon" src="img/flag/spanish.webp" alt=""> <span class="price-item__desc">из Испании:</span></p> <span class="price-item__price">3€/кг <i>(минимум 5€)</i></span>
+                        <p class="price-item__wrap-icon"><img class="price-item__icon" src="{{asset('myassets')}}/img/flag/spanish.webp" alt=""> <span class="price-item__desc">из Испании:</span></p> <span class="price-item__price">3€/кг <i>(минимум 5€)</i></span>
                     </div>
                     <div class="price-item price-item--with-icon">
-                        <p class="price-item__wrap-icon"><img class="price-item__icon" src="img/flag/italy.webp" alt=""> <span class="price-item__desc">из Италии:</span></p> <span class="price-item__price">3€/кг <i>(минимум 5€)</i></span>
+                        <p class="price-item__wrap-icon"><img class="price-item__icon" src="{{asset('myassets')}}/img/flag/italy.webp" alt=""> <span class="price-item__desc">из Италии:</span></p> <span class="price-item__price">3€/кг <i>(минимум 5€)</i></span>
                     </div>
                     <div class="price-item price-item--with-icon">
-                        <p class="price-item__wrap-icon"><img class="price-item__icon" src="img/flag/chinese.webp" alt=""> <span class="price-item__desc">из Китая:</span></p> <span class="price-item__price">12$/кг</span>
+                        <p class="price-item__wrap-icon"><img class="price-item__icon" src="{{asset('myassets')}}/img/flag/chinese.webp" alt=""> <span class="price-item__desc">из Китая:</span></p> <span class="price-item__price">12$/кг</span>
                     </div>
                 </div>
             </div>
@@ -122,7 +127,7 @@
                 </div>
             </div>
             <div class="price-list-container">
-                <h2 class="price-list-container__title price-list-container__title--icon price-list-container__title--mail-icon">Mail Forwarding <span class="tooltip"> <img src="img/q-icon.svg" alt="">
+                <h2 class="price-list-container__title price-list-container__title--icon price-list-container__title--mail-icon">Mail Forwarding <span class="tooltip"> <img src="{{asset('myassets')}}/img/q-icon.svg" alt="">
                                 <span class="tooltiptext">Если вы умеете совершать покупки самостоятельно, то мы предоставим вам адреса наших складов за рубежом</span>
                             </span></h2>
                 <div class="price-list">
@@ -144,11 +149,11 @@
     </main>
     <section class="example-price-section">
         <div class="container example-price-container">
-            <img class="example-price-section__img for-desc" src="img/section/e_price/pant.webp" alt="">
+            <img class="example-price-section__img for-desc" src="{{asset('myassets')}}/img/section/e_price/pant.webp" alt="">
             <div class="e-price-wrap">
                 <h2 class="title ta-left e-price__title">Пример</h2>
                 <p class="e-price__desc">Вы хотите купить джинсы в США, стоимостью 100$ и весом 0,5 кг. Расчет будет следующий:</p>
-                <img class="example-price-section__img for-xs" src="img/section/e_price/pant.webp" alt="">
+                <img class="example-price-section__img for-xs" src="{{asset('myassets')}}/img/section/e_price/pant.webp" alt="">
                 <div class="e-price-list">
                     <p class="e-price-list__item"><span>100$</span></p>
                     <p class="e-price-list__item e-price-list__item--separate-plus"><span>5$</span> <i>Доставка в Украину (1$ за 100 гр, но не более 8$ за 1 кг)</i></p>
@@ -190,7 +195,7 @@
     <div class="container">
         <div class="footer-wrapper">
             <div class="footer-coll footer-coll--logo-coll">
-                <img  class="footer-coll__logo" src="img/logo_footer.png" alt="">
+                <img  class="footer-coll__logo" src="{{asset('myassets')}}/img/logo_footer.png" alt="">
                 <!-- <p class="footer-coll__copyright">Дизайн сайта: FRONTMEN</p> -->
                 <p class="footer-coll__copyright">© 2009-2021 Big-Basket Все права защищены</p>
             </div>
@@ -235,7 +240,7 @@
       <h2>Авторизация</h2>
       <form action="">
         <input type="email" required placeholder="Ваш e-mail:">
-        <input type="password" required placeholder=Пароль">
+        <input type="password" required placeholder="Пароль">
         <a href="">Забыли пароль?</a>
         <a href=""> Регистрация</a>
         <button type="submit">Войти</button>
@@ -256,7 +261,7 @@
         <input type="email" required placeholder="ФИО:">
         <input type="email" required placeholder="Ваш телефон:">
         <input type="email" required placeholder="Ваш e-mail:">
-        <input type="password" required placeholder=Пароль">
+        <input type="password" required placeholder="Пароль">
         <div>
           <input type="checkbox" id="cb1"> <label for="cb1">Я согласен с <a href="#">Условиями пользованием сорвиса</a></label>
         </div>
@@ -276,9 +281,9 @@
   crossorigin="anonymous"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.knob.min.js"></script>
-    <script src="js/jquery.redcountdown.js"></script>
+    <script src="{{asset('myassets')}}/js/owl.carousel.min.js"></script>
+    <script src="{{asset('myassets')}}/js/jquery.knob.min.js"></script>
+    <script src="{{asset('myassets')}}/js/jquery.redcountdown.js"></script>
     <script>
         $(document).ready(function() {
             var nowDate = new Date();
@@ -323,9 +328,9 @@ document.querySelector('.nextWebinar').textContent = str;
         $('.js-select').nSelect();
     </script>
     <script src="js/jq-car.js"></script> -->
-<script src="js/main.js"></script>
+<script src="{{asset('myassets')}}/js/main.js"></script>
   <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
-<script src="js/jquery.flexslider.js"></script>
+<script src="{{asset('myassets')}}/js/jquery.flexslider.js"></script>
   <script type="text/javascript">
     $(function(){
       SyntaxHighlighter.all();

@@ -8,15 +8,15 @@
     <title>Document</title>
 <!--     <link rel="stylesheet" href="css/fonts.css">
     <script src="js/jquery-3.4.1.min.js"></script>
-        <link rel="stylesheet" href="css/owl.carousel.min.css"> -->
-        <link rel="preload" href="fonts/ProximaNova-Black.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="fonts/ProximaNova-Light.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="fonts/ProximaNova-Regular.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="fonts/ProximaNova-Extrabld.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="css/jcar.css">
-     <link rel="stylesheet" href="css/owl.carousel.min.css">
-      <link rel="stylesheet" href="css/owl.theme.default.min.css">
-       <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="{{asset('myassets')}}/css/owl.carousel.min.css"> -->
+        <link rel="preload" href="{{asset('myassets')}}/fonts/ProximaNova-Black.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="{{asset('myassets')}}/fonts/ProximaNova-Light.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="{{asset('myassets')}}/fonts/ProximaNova-Regular.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="{{asset('myassets')}}/fonts/ProximaNova-Extrabld.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="{{asset('myassets')}}/css/jcar.css">
+     <link rel="stylesheet" href="{{asset('myassets')}}/css/owl.carousel.min.css">
+      <link rel="stylesheet" href="{{asset('myassets')}}/css/owl.theme.default.min.css">
+       <link rel="stylesheet" href="{{asset('myassets')}}/css/app.css">
 </head>
 
 
@@ -28,7 +28,7 @@
     <div class="header-top">
         <div class="container">
             <div class="header-top-wrapper">
-                <a href="#"><img class="header-top__logo" src="img/logo_main.png" alt=""></a>
+                <a href="/"><img class="header-top__logo" src="{{asset('myassets')}}/img/logo_main.png" alt=""></a>
                 <div class="header-top-links">
                     <a class="header-top-links__phone"  href="tel:+0444667446">044 466 74 46</a>
                     <div class="header-top-links__links">
@@ -49,7 +49,7 @@
                     <div class="toggle__2"></div>
                     <div class="toggle__3"></div>
                 </div>
-                <img class="header-mobile__logo" src="img/mobile_logo_main.webp" alt="">
+                <img class="header-mobile__logo" src="{{asset('myassets')}}/img/mobile_logo_main.webp" alt="">
 
                 <a href="#" class="btn btn--orange">Заказать</a>
             </div>
@@ -61,20 +61,25 @@
             <div class="header-main-wrapper">
                 <nav class="header-main-nav">
                     <ul>
-                        <li><a class="header-main-nav__link" href="catalog.html">eBay</a></li>
-                        <li><a class="header-main-nav__link header-main-nav__link--active" href="amazon.html">Amazon</a></li>
-                        <li><a class="header-main-nav__link" href="tarif.html">Цены</a></li>
-                        <li><a class="header-main-nav__link" href="mf.html">MF</a></li> <!--  -->
-                        <li><a class="header-main-nav__link" href="shops.html">Магазины</a></li>
-                        <li><a class="header-main-nav__link" href="contacts.html">Контакты</a></li>
+
+
+
+
+
+                        <li><a class="header-main-nav__link" href="{{route('ebay')}}">eBay</a></li>
+                        <li><a class="header-main-nav__link header-main-nav__link--active" href="{{route('amazon')}}">Amazon</a></li>
+                        <li><a class="header-main-nav__link" href="{{route('tarif')}}">Цены</a></li>
+                        <li><a class="header-main-nav__link" href="{{route('mf')}}">MF</a></li>
+                        <li><a class="header-main-nav__link" href="{{route('shops')}}">Магазины</a></li>
+                        <li><a class="header-main-nav__link" href="{{route('contacts')}}">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="header-main-panel">
                     <div class="header-main-panel__links">
-                        <a href="calculate.html" class="link-calc">Расчет доставки</a>
-                        <a href="faq.html" class="link-support">Помощь</a>
+                        <a href="{{route('calculate')}}" class="link-calc">Расчет доставки</a>
+                        <a href="{{route('faq')}}" class="link-support">Помощь</a>
                     </div>
-                    <a href="open-shop.html" class="btn btn--orange">Заказ по ссылке</a>
+                    <a href="{{route('openShop')}}" class="btn btn--orange">Заказ по ссылке</a>
                 </div>
             </div>
         </div>
@@ -87,7 +92,7 @@
         <div class="container">
             <div class="flex-amazon">
              <h1 class="title ta-left steps-desc-section__title"  data-aos="fade-down">Как доставить с Amazon в Украину?</h1>
-             <a href="https://www.amazon.com" target="_blank"><img src="img/amazon-logo.png" class="for-desc" alt=""><img src="img/amazon-white.svg" class="for-xs" alt=""></a>
+             <a href="https://www.amazon.com" target="_blank"><img src="{{asset('myassets')}}/img/amazon-logo.png" class="for-desc" alt=""><img src="{{asset('myassets')}}/img/amazon-white.svg" class="for-xs" alt=""></a>
             </div>
             
             <div class="steps-desc-content-wrapper">
@@ -238,7 +243,7 @@
     <div class="container">
         <div class="footer-wrapper">
             <div class="footer-coll footer-coll--logo-coll">
-                <img  class="footer-coll__logo" src="img/logo_footer.png" alt="">
+                <img  class="footer-coll__logo" src="{{asset('myassets')}}/img/logo_footer.png" alt="">
                 <!-- <p class="footer-coll__copyright">Дизайн сайта: FRONTMEN</p> -->
                 <p class="footer-coll__copyright">© 2009-2021 Big-Basket Все права защищены</p>
             </div>
@@ -283,7 +288,7 @@
       <h2>Авторизация</h2>
       <form action="">
         <input type="email" required placeholder="Ваш e-mail:">
-        <input type="password" required placeholder=Пароль">
+        <input type="password" required placeholder="Пароль">
         <a href="">Забыли пароль?</a>
         <a href=""> Регистрация</a>
         <button type="submit">Войти</button>
@@ -304,7 +309,7 @@
         <input type="email" required placeholder="ФИО:">
         <input type="email" required placeholder="Ваш телефон:">
         <input type="email" required placeholder="Ваш e-mail:">
-        <input type="password" required placeholder=Пароль">
+        <input type="password" required placeholder="Пароль">
         <div>
           <input type="checkbox" id="cb1"> <label for="cb1">Я согласен с <a href="#">Условиями пользованием сорвиса</a></label>
         </div>
@@ -325,9 +330,9 @@
   crossorigin="anonymous"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.knob.min.js"></script>
-    <script src="js/jquery.redcountdown.js"></script>
+    <script src="{{asset('myassets')}}/js/owl.carousel.min.js"></script>
+    <script src="{{asset('myassets')}}/js/jquery.knob.min.js"></script>
+    <script src="{{asset('myassets')}}/js/jquery.redcountdown.js"></script>
     <script>
         $(document).ready(function() {
             var nowDate = new Date();
@@ -372,9 +377,9 @@ document.querySelector('.nextWebinar').textContent = str;
         $('.js-select').nSelect();
     </script>
     <script src="js/jq-car.js"></script> -->
-<script src="js/main.js"></script>
+<script src="{{asset('myassets')}}/js/main.js"></script>
   <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
-<script src="js/jquery.flexslider.js"></script>
+<script src="{{asset('myassets')}}/js/jquery.flexslider.js"></script>
   <script type="text/javascript">
     $(function(){
       SyntaxHighlighter.all();
