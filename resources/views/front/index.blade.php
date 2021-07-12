@@ -258,35 +258,38 @@
         <div class="container">
             <h2 class="title"  data-aos="fade-down">Товары с Ebay</h2>
             <ul class="category-list">
-                <li><a class="category-list__link" href="#"><span><i style="background: url('../public/myassets/img/section/category_icon/1.svg') no-repeat center / contain;"></i></span> Одежда</a>
+                <?php 
+$asset = asset('myassets');
+?>
+                <li><a class="category-list__link" href="#"><span><i style='background: url("{{$asset}}/img/section/category_icon/1.svg") no-repeat center / contain;'></i></span> Одежда</a>
                 </li>
-                <li><a class="category-list__link" href="#"><span><i style="background: url('img/section/category_icon/2.svg') no-repeat center / contain;"></i></span> Обувь</a>
+                <li><a class="category-list__link" href="#"><span><i style='background: url("{{$asset}}/img/section/category_icon/2.svg") no-repeat center / contain;'></i></span> Обувь</a>
                 </li>
-                <li><a class="category-list__link" href="#"><span><i style="background: url('img/section/category_icon/3.svg') no-repeat center / contain;"></i></span> Автозапчасти</a>
+                <li><a class="category-list__link" href="#"><span><i style='background: url("{{$asset}}/img/section/category_icon/3.svg") no-repeat center / contain;'></i></span> Автозапчасти</a>
                 </li>
-                <li><a class="category-list__link" href="#"><span><i style="background: url('img/section/category_icon/4.svg') no-repeat center / contain;"></i></span> Смартфоны и аксессуары</a>
+                <li><a class="category-list__link" href="#"><span><i style='background: url("{{$asset}}/img/section/category_icon/4.svg") no-repeat center / contain;'></i></span> Смартфоны и аксессуары</a>
                 </li>
-                <li><a class="category-list__link" href="#"><span><i style="background: url('img/section/category_icon/5.svg') no-repeat center / contain;"></i></span> ПК, ноутбуки и планшеты</a>
+                <li><a class="category-list__link" href="#"><span><i style='background: url("{{$asset}}/img/section/category_icon/5.svg") no-repeat center / contain;'></i></span> ПК, ноутбуки и планшеты</a>
                 </li>
-                <li><a class="category-list__link" href="#"><span><i style="background: url('img/section/category_icon/6.svg') no-repeat center / contain;"></i></span> Часы</a>
+                <li><a class="category-list__link" href="#"><span><i style='background: url("{{$asset}}/img/section/category_icon/6.svg") no-repeat center / contain;'></i></span> Часы</a>
                 </li>
-                <li><a class="category-list__link" href="#"><span><i style="background: url('img/section/category_icon/7.svg') no-repeat center / contain;"></i></span> Женские сумки</a>
+                <li><a class="category-list__link" href="#"><span><i style='background: url("{{$asset}}/img/section/category_icon/7.svg") no-repeat center / contain;'></i></span> Женские сумки</a>
                 </li>
-                <li><a class="category-list__link" href="#"><span><i style="background: url('img/section/category_icon/8.svg') no-repeat center / contain;"></i></span> Спортивые товары</a>
+                <li><a class="category-list__link" href="#"><span><i style='background: url("{{$asset}}/img/section/category_icon/8.svg") no-repeat center / contain;'></i></span> Спортивые товары</a>
                 </li>
-                <li><a class="category-list__link" href="#"><span><i style="background: url('img/section/category_icon/9.svg') no-repeat center / contain;"></i></span> Детская одежда</a>
+                <li><a class="category-list__link" href="#"><span><i style='background: url("{{$asset}}/img/section/category_icon/9.svg") no-repeat center / contain;'></i></span> Детская одежда</a>
                 </li>
-                <li><a class="category-list__link" href="#"><span><i style="background: url('img/section/category_icon/10.svg') no-repeat center / contain;"></i></span> Игрушки</a>
+                <li><a class="category-list__link" href="#"><span><i style='background: url("{{$asset}}/img/section/category_icon/10.svg") no-repeat center / contain;'></i></span> Игрушки</a>
                 </li>
-                <li><a class="category-list__link" href="#"><span><i style="background: url('img/section/category_icon/11.svg') no-repeat center / contain;"></i></span> Музыкальное оборудование и инструменты</a>
+                <li><a class="category-list__link" href="#"><span><i style='background: url("{{$asset}}/img/section/category_icon/11.svg") no-repeat center / contain;'></i></span> Музыкальное оборудование и инструменты</a>
                 </li>
-                <li><a class="category-list__link" href="#"><span><i style="background: url('img/section/category_icon/12.svg') no-repeat center / contain;"></i></span> Овелирные товары</a>
+                <li><a class="category-list__link" href="#"><span><i style='background: url("{{$asset}}/img/section/category_icon/12.svg") no-repeat center / contain;'></i></span> Овелирные товары</a>
                 </li>
-                <li><a class="category-list__link" href="#"><span><i style="background: url('img/section/category_icon/13.svg') no-repeat center / contain;"></i></span> Антикавариат</a>
+                <li><a class="category-list__link" href="#"><span><i style='background: url("{{$asset}}/img/section/category_icon/13.svg") no-repeat center / contain;'></i></span> Антикавариат</a>
                 </li>
-                <li><a class="category-list__link" href="#"><span><i style="background: url('img/section/category_icon/14.svg') no-repeat center / contain;"></i></span> Товары для путешесвий</a>
+                <li><a class="category-list__link" href="#"><span><i style='background: url("{{$asset}}/img/section/category_icon/14.svg") no-repeat center / contain;'></i></span> Товары для путешесвий</a>
                 </li>
-                <li><a class="category-list__link" href="#"><span><i style="background: url('img/section/category_icon/15.svg') no-repeat center / contain;"></i></span> Здоровье и красота</a>
+                <li><a class="category-list__link" href="#"><span><i style='background: url("{{$asset}}/img/section/category_icon/15.svg") no-repeat center / contain;'></i></span> Здоровье и красота</a>
                 </li>
             </ul>
             <div class="section-bottom-container">
