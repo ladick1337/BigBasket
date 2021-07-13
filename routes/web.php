@@ -42,3 +42,4 @@ Route::get('/faq', 'BigBasketController@faq' )->name('faq');
 
 Route::get('/open-shop', 'BigBasketController@openShop' )->name('openShop');
 
+Route::get('/send-mail', 'BigBasketController@sendMail')->name('sendMail');

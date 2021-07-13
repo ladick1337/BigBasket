@@ -124,22 +124,23 @@
                 <div class="contact-contain-photo">
                     <h2 class="add-question-title title ta-left">Обратная связь</h2>
                     <form action="#" class="simple-form for-xss">
-                    <input class="simple-form__input" type="text" placeholder="Ваше имя">
-                    <input class="simple-form__input" type="email" placeholder="Ваш e-mail">
-                    <textarea class="simple-form__textarea" name="message" placeholder="Вопрос"></textarea>
-                    <button class="simple-form__btn btn btn--blue-gradient" type="submit">Отправить</button>
-                </form>
+                        <input class="simple-form__input" type="text" placeholder="Ваше имя">
+                        <input class="simple-form__input" type="email" placeholder="Ваш e-mail">
+                        <textarea class="simple-form__textarea" name="message" placeholder="Вопрос"></textarea>
+                        <button class="simple-form__btn btn btn--blue-gradient" type="submit">Отправить</button>
+                    </form>
                     <div class="contact-contain-photo__wrapper">
                         <img src="{{asset('myassets')}}/img/section/contact/photo1.webp" alt="">
                         <img src="{{asset('myassets')}}/img/section/contact/photo2.webp" alt="">
                     </div>
                 </div>
 
-                <form action="#" class="simple-form for-descs">
-                    <input class="simple-form__input" type="text" placeholder="Ваше имя">
-                    <input class="simple-form__input" type="email" placeholder="Ваш e-mail">
+                <form class="simple-form for-descs" action="{{route('sendMail')}}" method="GET" enctype="multipart/form-data">
+                    <input class="simple-form__input" name="name" type="text" placeholder="Ваше имя">
+                    <input class="simple-form__input" name="email" type="email" placeholder="Ваш e-mail">
                     <textarea class="simple-form__textarea" name="message" placeholder="Вопрос"></textarea>
                     <button class="simple-form__btn btn btn--blue-gradient" type="submit">Отправить</button>
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 </form>
             </div>
         </div>
