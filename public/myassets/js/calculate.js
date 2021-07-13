@@ -78,7 +78,7 @@ $(document).ready(function(){
         let weight = $("#from").val();
         console.log(price + " " + weight + " " + selectedState);
         let finalPrice = getPrice(selectedState, weight, price).toFixed(2);
-        $(".final_price").text(finalPrice + " " + statesTarifs[selectedState].currency);
+        $(".final_price").text(finalPrice + " " + currencyTable[statesTarifs[selectedState].currency]);
         $(".calculate__label--result").show();
     });
 
