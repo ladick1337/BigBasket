@@ -45,4 +45,19 @@ class BigBasketController extends Controller
     public function openShop(){
         return view('front.open-shop');
     }
+
+    public function sendMail(Request $req){
+        $name = $req->name;
+        $email = $req->email;
+        $message = $req->message;
+        $to = "tujh.rexthzds@gmail.com";
+        
+        $finmessage = $name . " оставил сообщение:\n" . $message;
+        $subject = "Обратная связь: вопрос клиента";
+        $headers = "From:" . $email;
+
+        mail($to, $subject, $finmessage, $headers);
+
+        return view('front.contacts');
+    }
 }
