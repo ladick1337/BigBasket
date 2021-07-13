@@ -111,9 +111,9 @@
                     </div>
                     <div class="calculate-row calculate-row--bottom">
                         <button class="calculate__btn btn btn--blue-gradient">Рассчитать</button>
-                        <p class="calculate__label calculate__label--result">Ориентировочная стоимость с доставкой в Украину: <span class="tooltip d-hidden"> <img src="{{asset('myassets')}}/img/q-icon.svg" alt="">
+                        <p class="calculate__label calculate__label--result" style="display: none;">Ориентировочная стоимость с доставкой в Украину: <span class="tooltip d-hidden"> <img src="{{asset('myassets')}}/img/q-icon.svg" alt="">
                                 <span class="tooltiptext">Указанная сумма является ориентировочной, т.к. зависит от правильности заполнения формы. Чтобы получить точный рассчет стоимости заказа, оставьте заявку и мы сделаем вам рассчет стоимости.</span>
-                            </span><span class="bold">500 грн</span> <span class="tooltip m-hidden"> <img src="{{asset('myassets')}}/img/q-icon.svg" alt="">
+                            </span><span class="bold final_price"></span> <span class="tooltip m-hidden"> <img src="{{asset('myassets')}}/img/q-icon.svg" alt="">
                                 <span class="tooltiptext">Указанная сумма является ориентировочной, т.к. зависит от правильности заполнения формы. Чтобы получить точный рассчет стоимости заказа, оставьте заявку и мы сделаем вам рассчет стоимости.</span>
                             </span></p>
                     </div>
