@@ -50,7 +50,7 @@ class BigBasketController extends Controller
         $name = $req->name;
         $email = $req->email;
         $message = $req->message;
-        $to = "tujh.rexthzds@gmail.com";
+        $to = "sales@big-basket.net";
         
         $finmessage = $name . " оставил сообщение:\n" . $message;
         $subject = "Обратная связь: вопрос клиента";
