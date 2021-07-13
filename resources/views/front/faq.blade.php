@@ -210,7 +210,7 @@
     <div class="container">
         <div class="add-question-wrapper">
             <h2 class="add-question-title title ta-left">Остались вопросы? Задайте их нам</h2>
-            <form action="#" class="simple-form">
+            <form action="{{route('sendMail')}}" class="simple-form">
                 <input class="simple-form__input" type="text" placeholder="Ваше имя">
                 <input class="simple-form__input" type="email" placeholder="Ваш e-mail">
                 <textarea class="simple-form__textarea" name="message" placeholder="Вопрос"></textarea>
