@@ -134,27 +134,31 @@
     <div class="container">
         <h2 class="title"  data-aos="fade-down">Популярные категории товаров на Amazon</h2>
         <ul class="category-list">
-            <li><a class="category-list__link" href="#"><span><i style="background: url('img/section/amazon_category_icon/1.svg') no-repeat center / contain;"></i></span> Женская одежда</a>
+             <?php 
+$asset = asset('myassets');
+?>
+
+            <li><a class="category-list__link" href="https://www.amazon.com/s?k=women+clothing"><span><i style='background: url("{{$asset}}/img/section/amazon_category_icon/1.svg") no-repeat center / contain;'></i></span> Женская одежда</a>
             </li>
-            <li><a class="category-list__link" href="#"><span><i style="background: url('img/section/amazon_category_icon/2.svg') no-repeat center / contain;"></i></span> Мужская одежда</a>
+            <li><a class="category-list__link" href="https://www.amazon.com/s?k=men+clothing"><span><i style='background: url("{{$asset}}/img/section/amazon_category_icon/2.svg") no-repeat center / contain;'></i></span> Мужская одежда</a>
             </li>
-            <li><a class="category-list__link" href="#"><span><i style="background: url('img/section/amazon_category_icon/3.svg') no-repeat center / contain;"></i></span> Женская обувь</a>
+            <li><a class="category-list__link" href="https://www.amazon.com/s?k=women+shoes"><span><i style='background: url("{{$asset}}/img/section/amazon_category_icon/3.svg") no-repeat center / contain;'></i></span> Женская обувь</a>
             </li>
-            <li><a class="category-list__link" href="#"><span><i style="background: url('img/section/amazon_category_icon/4.svg') no-repeat center / contain;"></i></span> Мужская обувь</a>
+            <li><a class="category-list__link" href="https://www.amazon.com/s?k=men+shoes"><span><i style='background: url("{{$asset}}/img/section/amazon_category_icon/4.svg") no-repeat center / contain;'></i></span> Мужская обувь</a>
             </li>
-            <li><a class="category-list__link" href="#"><span><i style="background: url('img/section/amazon_category_icon/5.svg') no-repeat center / contain;"></i></span> Смартфоны и аксессуары</a>
+            <li><a class="category-list__link" href="https://www.amazon.com/s?k=phone"><span><i style='background: url("{{$asset}}/img/section/amazon_category_icon/5.svg") no-repeat center / contain;'></i></span> Смартфоны и аксессуары</a>
             </li>
-            <li><a class="category-list__link" href="#"><span><i style="background: url('img/section/amazon_category_icon/6.svg') no-repeat center / contain;"></i></span> ПК, ноутбуки и планшенты</a>
+            <li><a class="category-list__link" href="https://www.amazon.com/s?k=computer"><span><i style='background: url("{{$asset}}/img/section/amazon_category_icon/6.svg") no-repeat center / contain;'></i></span> ПК, ноутбуки и планшенты</a>
             </li>
-            <li><a class="category-list__link" href="#"><span><i style="background: url('img/section/amazon_category_icon/7.svg') no-repeat center / contain;"></i></span> Часы</a>
+            <li><a class="category-list__link" href="https://www.amazon.com/s?k=watches"><span><i style='background: url("{{$asset}}/img/section/amazon_category_icon/7.svg") no-repeat center / contain;'></i></span> Часы</a>
             </li>
-            <li><a class="category-list__link" href="#"><span><i style="background: url('img/section/amazon_category_icon/8.svg') no-repeat center / contain;"></i></span> Женские сумки</a>
+            <li><a class="category-list__link" href="https://www.amazon.com/s?k=handbags"><span><i style='background: url("{{$asset}}/img/section/amazon_category_icon/8.svg") no-repeat center / contain;'></i></span> Женские сумки</a>
             </li>
-            <li><a class="category-list__link" href="#"><span><i style="background: url('img/section/amazon_category_icon/9.svg') no-repeat center / contain;"></i></span> Одежда для девочек</a>
+            <li><a class="category-list__link" href="https://www.amazon.com/s?k=girl+clothing"><span><i style='background: url("{{$asset}}/img/section/amazon_category_icon/9.svg") no-repeat center / contain;'></i></span> Одежда для девочек</a>
             </li>
-            <li><a class="category-list__link" href="#"><span><i style="background: url('img/section/amazon_category_icon/10.svg') no-repeat center / contain;"></i></span> Одежда для мальчиков</a>
+            <li><a class="category-list__link" href="https://www.amazon.com/s?k=boy+clothing"><span><i style='background: url("{{$asset}}/img/section/amazon_category_icon/10.svg") no-repeat center / contain;'></i></span> Одежда для мальчиков</a>
             </li>
-            <li><a class="category-list__link" href="#"><span><i style="background: url('img/section/amazon_category_icon/11.svg') no-repeat center / contain;"></i></span> Электроника и аксессуары для автомобилей</a>
+            <li><a class="category-list__link" href="https://www.amazon.com/s?k=car+accessories"><span><i style='background: url("{{$asset}}/img/section/amazon_category_icon/11.svg") no-repeat center / contain;'></i></span> Электроника и аксессуары для автомобилей</a>
             </li>
         </ul>
         <div class="section-bottom-container">
