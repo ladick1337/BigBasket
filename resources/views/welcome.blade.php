@@ -81,7 +81,16 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Laravel дайте пива, хочу водки
+                    <br>    
+                    список покупок:
+                    <ol>
+                        <li>pivo</li>
+                        <li>pivo</li>
+                        <li>pivo</li>
+                        <li>pivo</li>
+                        <li>pivo</li>
+                    </ol>
                 </div>
 
                 <div class="links">
