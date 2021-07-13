@@ -43,3 +43,15 @@ Route::get('/faq', 'BigBasketController@faq' )->name('faq');
 Route::get('/open-shop', 'BigBasketController@openShop' )->name('openShop');
 
 Route::get('/send-mail', 'BigBasketController@sendMail')->name('sendMail');
+
+Route::get('/request', 'BigBasketController@request')->name('request');
+
+Route::get('/reviews', 'BigBasketController@reviews')->name('reviews');
+
+Route::get('/article', 'BigBasketController@article')->name('article');
+
+Route::get('/my-adress', 'BigBasketController@myAdress')->name('myAdress');
+
+Route::get('/tovar', 'BigBasketController@tovar')->name('tovar');
+
+Route::get('/zakaz', 'BigBasketController@zakaz')->name('zakaz');

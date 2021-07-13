@@ -46,6 +46,30 @@ class BigBasketController extends Controller
         return view('front.open-shop');
     }
 
+    public function request(){
+        return view('front.request');
+    }
+
+    public function reviews(){
+        return view('front.reviews');
+    }
+
+    public function article(){
+        return view('front.article');
+    }
+
+    public function myAdress(){
+        return view('front.my-adress');
+    }
+
+    public function tovar(){
+        return view('front.tovar');
+    }
+
+    public function zakaz(){
+        return view('front.zakaz');
+    }
+
     public function sendMail(Request $req){
         $name = $req->name;
         $email = $req->email;

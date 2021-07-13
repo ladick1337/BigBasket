@@ -13,10 +13,11 @@
         <link rel="preload" href="{{asset('myassets')}}/fonts/ProximaNova-Light.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="preload" href="{{asset('myassets')}}/fonts/ProximaNova-Regular.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="preload" href="{{asset('myassets')}}/fonts/ProximaNova-Extrabld.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="{{asset('myassets')}}/css/jcar.css">
-     <link rel="stylesheet" href="{{asset('myassets')}}/css/owl.carousel.min.css">
-      <link rel="stylesheet" href="{{asset('myassets')}}/css/owl.theme.default.min.css">
-       <link rel="stylesheet" href="{{asset('myassets')}}/css/app.css">
+        <link rel="stylesheet" href="{{asset('myassets')}}/css/jcar.css">
+        <link rel="stylesheet" href="{{asset('myassets')}}/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="{{asset('myassets')}}/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="{{asset('myassets')}}/css/app.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 
@@ -173,9 +174,8 @@
 <!-- <script src="js/jquery-3.4.1.min.js"
   integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
   crossorigin="anonymous"></script> -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <script src="{{asset('myassets')}}/js/owl.carousel.min.js"></script>
+    <script src="{{asset('myassets')}}/js/owl.carousel.min.js"></>
     <script src="{{asset('myassets')}}/js/jquery.knob.min.js"></script>
     <script src="{{asset('myassets')}}/js/jquery.redcountdown.js"></script>
     <script>
