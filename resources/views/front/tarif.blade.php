@@ -48,7 +48,7 @@
                             </span></h2>
                 <div class="price-list">
                     <p class="price-item"><span class="price-item__desc">Прием одной вашей посылки на наш склад:</span><span class="price-item__price">3$</span></p>
-                    <a class="price-list__link" href="#"> Подробнее об услуге</a>
+                    <a class="price-list__link" href="{{route('mf')}}"> Подробнее об услуге</a>
                 </div>
             </div>
             <div class="price-list-container">
