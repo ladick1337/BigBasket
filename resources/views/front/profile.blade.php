@@ -48,20 +48,20 @@
                 <input class="req-i2" name="paronim" placeholder="Отчество">
                 <input class="req-i2" name="email" placeholder="Почта">
                 <input class="req-i2" name="phone" placeholder="Номер телефона">
-                <input type="checkbox" name="sms-info" id="cb1">
+                <input type="checkbox" name="sms_subsribed" id="cb1">
                 <lable for="cb1">Подключить SMS-информирование</lable>
             </div>
             <div class="profile__form_block">
                 <p class="adr-p">Адрес</p>
-                <input class="req-i2" name="name" placeholder="Город">
-                <input class="req-i2" name="surname" placeholder="Улица">
-                <select class="calculate-row__select js-select" name="delivery-type">
+                <input class="req-i2" name="adress_city" placeholder="Город">
+                <input class="req-i2" name="adress_street" placeholder="Улица">
+                <select class="calculate-row__select js-select" name="delivery_type">
                     <option value="courier" code="128" selected="selected">Курьером по Киеву</option>
-                    <option value="nova-post" code="128">Новая почта</option>
+                    <option value="nova_post" code="128">Новая почта</option>
                     <option value="self" code="128">Самовывоз со склада в Киеве</option>
                 </select>
-                <input type="checkbox" name="sms-info" id="cb1">
-                <lable for="cb1">Подключить SMS-информирование</lable>
+                <input type="checkbox" name="news_subsribed" id="cb1">
+                <lable for="cb1">Подписаться на новости и акции</lable>
             </div>
             <div class="profile__form_block">
                 <p class="adr-p">Сменить пароль</p>
@@ -69,7 +69,7 @@
                 <input class="req-i2" name="surname" placeholder="Новый пароль">
                 <input class="req-i2" name="paronim" placeholder="Подтвердите пароль">
 
-                <input class="btn btn--blue-gradient" type="submit" value="Редактировать">
+                <input class="btn btn--blue-gradient" type="button" value="Редактировать">
             </div>
 
         </form>
