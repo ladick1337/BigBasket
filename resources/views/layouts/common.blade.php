@@ -174,7 +174,7 @@
 <!-- <script src="js/jquery-3.4.1.min.js"
   integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
   crossorigin="anonymous"></script> -->
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="{{asset('myassets')}}/js/owl.carousel.min.js"></>
     <script src="{{asset('myassets')}}/js/jquery.knob.min.js"></script>
     <script src="{{asset('myassets')}}/js/jquery.redcountdown.js"></script>
@@ -209,19 +209,19 @@
         });
     </script>
     <script>
- var d = new Date(Date.now());
- month = ['января', 'февраля', 'марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'];
+        var d = new Date(Date.now());
+        month = ['января', 'февраля', 'марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'];
 
-d.setDate(d.getDate() + 1);
+        d.setDate(d.getDate() + 1);
 
-str = d.getDate()+' '+month[d.getMonth()];
-document.querySelector('.nextWebinar').textContent = str;
+        str = d.getDate()+' '+month[d.getMonth()];
+        document.querySelector('.nextWebinar').textContent = str;
 </script>
-<!--  <script src="js/jquery.nselect.min.js"></script>
+  <script src="{{asset('myassets')}}/js/jquery.nselect.min.js"></script>
     <script>
         $('.js-select').nSelect();
     </script>
-    <script src="js/jq-car.js"></script> -->
+    <script src="/{{asset('myassets')}}js/jq-car.js"></script> -->
 <script src="{{asset('myassets')}}/js/main.js"></script>
   <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
 <script src="{{asset('myassets')}}/js/jquery.flexslider.js"></script>

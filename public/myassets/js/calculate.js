@@ -68,6 +68,7 @@ $(document).ready(function(){
     /////////////////////////////// Смена валюты
     $(".cal_currency").text(currencyTable.USD); 
     $(".nselect__list li").on("click", function() {
+        console.log("Changed");
         selectedState = $(this).attr("data-val");
         $(".cal_currency").text(currencyTable[statesTarifs[selectedState].currency]);
     });

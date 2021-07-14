@@ -8,7 +8,7 @@
                     <h1 class="calculate-section__title  title ta-left"><img src="{{asset('myassets')}}/img/calc-icon.svg" alt="">Расчет доставки</h1>
                     <div class="calculate-row">
                         <label class="calculate-row__label label" for="from">Местонахождение товара (ов): </label>
-                            <select class="calculate-row__select js-select" name="neworder[order][country_from]">
+                            <select style="display: none;" class="calculate-row__select js-select" name="neworder[order][country_from]">
                                 <option value="USAAir" code="128" selected="selected">США авиа</option>
                                 <option value="USASea50" code="128">США морем 50 дней</option>
                                 <option value="USASea30" code="128">США морем 30 дней</option>
@@ -52,7 +52,6 @@
             </div>
         </div>
     </section>
-    
     
     <script src="{{asset('myassets')}}/js/calculate.js"></script>
 
