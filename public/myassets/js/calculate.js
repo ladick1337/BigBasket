@@ -68,7 +68,6 @@ $(document).ready(function(){
     /////////////////////////////// Смена валюты
     $(".cal_currency").text(currencyTable.USD); 
     $(".nselect__list li").on("click", function() {
-        console.log("Changed");
         selectedState = $(this).attr("data-val");
         $(".cal_currency").text(currencyTable[statesTarifs[selectedState].currency]);
     });
@@ -77,7 +76,6 @@ $(document).ready(function(){
     $(".calculate__btn").click(function(){
         let price = $("#price").val();
         let weight = $("#from").val();
-        console.log(price + " " + weight + " " + selectedState);
         let finalPrice = getPrice(selectedState, weight, price).toFixed(2);
         $(".final_price").text(finalPrice + " " + currencyTable[statesTarifs[selectedState].currency]);
         $(".calculate__label--result").show();
