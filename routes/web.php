@@ -16,13 +16,21 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+Route::post('/custom-register', 'Auth\RegisterController@register')->name('custom-register');
+
+
+Route::group(['middleware'=>'auth'], function () {
+
+    Route::get('/my-adress', 'BigBasketController@myAdress')->name('myAdress');
+    Route::get('/tovar', 'BigBasketController@tovar')->name('tovar');
+    Route::get('/zakaz', 'BigBasketController@zakaz')->name('zakaz');
+    Route::get('/profile', 'BigBasketController@profile')->name('profile');
+
+});
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
-
 Route::get('/', 'BigBasketController@index' )->name('index');
-
 
 Route::get('/ebay', 'BigBasketController@ebay' )->name('ebay');
 
@@ -42,18 +50,14 @@ Route::get('/faq', 'BigBasketController@faq' )->name('faq');
 
 Route::get('/open-shop', 'BigBasketController@openShop' )->name('openShop');
 
-Route::get('/send-mail', 'BigBasketController@sendMail')->name('sendMail');
-
 Route::get('/request', 'BigBasketController@request')->name('request');
 
 Route::get('/reviews', 'BigBasketController@reviews')->name('reviews');
 
 Route::get('/article', 'BigBasketController@article')->name('article');
 
-Route::get('/my-adress', 'BigBasketController@myAdress')->name('myAdress');
 
-Route::get('/tovar', 'BigBasketController@tovar')->name('tovar');
 
-Route::get('/zakaz', 'BigBasketController@zakaz')->name('zakaz');
+Route::get('/send-mail', 'BigBasketController@sendMail')->name('sendMail');
 
 Route::get('/take-request', 'BigBasketController@takeRequest')->name('takeRequest');

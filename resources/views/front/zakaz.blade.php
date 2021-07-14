@@ -7,7 +7,7 @@
             <div class="flex">
                 <div class="for-m">
 
-                    <img src="img/i-icon.svg" alt="">
+                    <img src="{{asset('myassets')}}/img/i-icon.svg" alt="">
                     <span class="m-title">Курсы валют:</span>
                 </div>
                 <p>USD: <span>28.33</span> грн</p>
@@ -22,11 +22,11 @@
                 <a href="" class="active">Заказы</a>
                 <a href=""><span class="for-desc">Мой почтовый ящик</span><span class="for-mob">MF</span></a>
                 <a href=""><span class="for-desc">Кошелек</span><span class="for-mob">Баланс</span></a>
-                <a href="">Профиль</a>
+                <a href="{{route('profile')}}">Профиль</a>
             </div>
             <div class="my-money">
-                <p class="count"><img src="img/carts.png">395.05 UAH<br>
-                    <span>= 13.87 $ = 11.75 $ = 10.69 £ <span class="tooltip"> <img src="img/q-icon.svg" alt="">
+                <p class="count"><img src="{{asset('myassets')}}/img/carts.png">395.05 UAH<br>
+                    <span>= 13.87 $ = 11.75 $ = 10.69 £ <span class="tooltip"> <img src="{{asset('myassets')}}/img/q-icon.svg" alt="">
                                 <span class="tooltiptext zak">Указываются валютные эквиваленты вашего баланса по текущему курсу</span>
                             </span></span></p>
             </div>
@@ -59,7 +59,7 @@
                 <td><span class="d-hidden">Статус: </span><span class="bold-m">Ожидается оплата</span></td>
                 <td><span class="d-hidden">К оплате: </span><span class="bold-m">8$</span><a class="gray">(Посмотреть расчет)</a></td>
                 <td><span class="d-hidden d-none">Действие: </span><span class="btns"><a href="">Оплатить</a><a href="">Отказаться</a></span></td>
-                <td><span class="d-hidden">Переписка по заказу: </span><img src="img/quest.svg"></td>
+                <td><span class="d-hidden">Переписка по заказу: </span><img src="{{asset('myassets')}}/img/quest.svg"></td>
             </tr>
             <tr>
                 <td class="mobile"><span class="blue"><a href="#">036812</a></span> | <span>Магазин: </span><span class="blue"><a href="#" class="shop-link">tr.com</a></span></td>
@@ -69,7 +69,7 @@
                 <td><span class="d-hidden">Статус: </span><span class="bold-m">Ожидается оплата</span></td>
                 <td><span class="d-hidden">К оплате: </span><span class="bold-m">25$</span><a class="gray">(Посмотреть расчет)</a></td>
                 <td><span class="d-hidden d-none">Действие: </span><span class="btns"><a href="">Оплатить</a><a href="">Отказаться</a></span></td>
-                <td><span class="d-hidden">Переписка по заказу: </span><img src="img/quest.svg"></td>
+                <td><span class="d-hidden">Переписка по заказу: </span><img src="{{asset('myassets')}}/img/quest.svg"></td>
             </tr>
         </table>
         <p class="adr-p">Оплаченные заказы</p>
@@ -91,7 +91,7 @@
                 <td><span class="d-hidden">Оплачено: </span><span class="bold-m">25$</span><a class="gray">(Посмотреть расчет)</a></td>
                 <td><span class="d-hidden">Статус: </span><span class="bold-m">Отправлен в <br>Украину</span></td>
                 <td><span class="d-hidden">Ожидается примерно: </span><span class="bold-m">26.10.2018</span></td>
-                <td><span class="d-hidden">Переписка по заказу: </span><img src="img/quest.svg"></td>
+                <td><span class="d-hidden">Переписка по заказу: </span><img src="{{asset('myassets')}}/img/quest.svg"></td>
                 <td class="d-hid"><a class="green-btn" href="">Заказ получен</a></td>
             </tr>
             <tr>
@@ -102,7 +102,7 @@
                 <td><span class="d-hidden">Оплачено: </span><span class="bold-m">25$</span><a class="gray">(Посмотреть расчет)</a></td>
                 <td><span class="d-hidden">Статус: </span><span class="bold-m">Отправлен в <br>Украину</span></td>
                 <td><span class="d-hidden">Ожидается примерно: </span><span class="bold-m">26.10.2018</span></td>
-                <td><span class="d-hidden">Переписка по заказу: </span><img src="img/quest.svg"></td>
+                <td><span class="d-hidden">Переписка по заказу: </span><img src="{{asset('myassets')}}/img/quest.svg"></td>
                 <td class="d-hid"><a class="green-btn" href="">Заказ получен</a></td>
             </tr>
             <tr>
@@ -113,7 +113,7 @@
                 <td><span class="d-hidden">Оплачено: </span><span class="bold-m">25$</span><a class="gray">(Посмотреть расчет)</a></td>
                 <td><span class="d-hidden">Статус: </span><span class="bold-m">Отправлен в <br>Украину</span></td>
                 <td><span class="d-hidden">Ожидается примерно: </span><span class="bold-m">26.10.2018</span></td>
-                <td><span class="d-hidden">Переписка по заказу: </span><img src="img/quest.svg"></td>
+                <td><span class="d-hidden">Переписка по заказу: </span><img src="{{asset('myassets')}}/img/quest.svg"></td>
                 <td class="d-hid"><a class="green-btn" href="">Заказ получен</a></td>
             </tr>
             <tr>
@@ -124,7 +124,7 @@
                 <td><span class="d-hidden">Оплачено: </span><span class="bold-m">25$</span><a class="gray">(Посмотреть расчет)</a></td>
                 <td><span class="d-hidden">Статус: </span><span class="bold-m">Отправлен в <br>Украину</span></td>
                 <td><span class="d-hidden">Ожидается примерно: </span><span class="bold-m">26.10.2018</span></td>
-                <td><span class="d-hidden">Переписка по заказу: </span><img src="img/quest.svg"></td>
+                <td><span class="d-hidden">Переписка по заказу: </span><img src="{{asset('myassets')}}/img/quest.svg"></td>
                 <td class="d-hid"><a class="green-btn" href="">Заказ получен</a></td>
             </tr>
             <tr>
@@ -135,7 +135,7 @@
                 <td><span class="d-hidden">Оплачено: </span><span class="bold-m">25$</span><a class="gray">(Посмотреть расчет)</a></td>
                 <td><span class="d-hidden">Статус: </span><span class="bold-m">Отправлен в <br>Украину</span></td>
                 <td><span class="d-hidden">Ожидается примерно: </span><span class="bold-m">26.10.2018</span></td>
-                <td><span class="d-hidden">Переписка по заказу: </span><img src="img/quest.svg"></td>
+                <td><span class="d-hidden">Переписка по заказу: </span><img src="{{asset('myassets')}}/img/quest.svg"></td>
                 <td class="d-hid"><a class="green-btn" href="">Заказ получен</a></td>
             </tr>
             <tr>
@@ -146,7 +146,7 @@
                 <td><span class="d-hidden">Оплачено: </span><span class="bold-m">25$</span><a class="gray">(Посмотреть расчет)</a></td>
                 <td><span class="d-hidden">Статус: </span><span class="bold-m">Отгружено <br>клиенту</span></td>
                 <td><span class="d-hidden">Ожидается: </span><span class="blue">Доставлен</span></td>
-                <td><span class="d-hidden">Переписка по заказу: </span><img src="img/quest.svg"></td>
+                <td><span class="d-hidden">Переписка по заказу: </span><img src="{{asset('myassets')}}/img/quest.svg"></td>
                 <td class="d-hid"><a class="green-btn" href="">Заказ получен</a></td>
             </tr></span>
         </table>

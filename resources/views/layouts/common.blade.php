@@ -30,11 +30,20 @@
                 <a href="/"><img class="header-top__logo" src="{{asset('myassets')}}/img/logo_main.png" alt=""></a>
                 <div class="header-top-links">
                     <a class="header-top-links__phone"  href="tel:+0444667446">044 466 74 46</a>
+                    @if($logged)
+                    <div class="header-top-links__links">
+                        <a href="{{route('zakaz')}}">Профиль</a>
+                        <span>/</span>
+                        <form action='{{route("logout")}}' method="POST" id="logout" hidden>@csrf</form>
+                        <a href="#" id="myBtn3" onclick="$('#logout').submit()">Выход</a>
+                    </div>
+                    @else
                     <div class="header-top-links__links">
                         <a href="#" id="myBtn">Вход</a>
                         <span>/</span>
                         <a href="#" id="myBtn2">Регистрация</a>
                     </div>
+                    @endif
                 </div>
             </div>
         </div>
@@ -133,9 +142,10 @@
     <div class="modal-inner">
       <span class="close close1">&times;</span>
       <h2>Авторизация</h2>
-      <form action="">
-        <input type="email" required placeholder="Ваш e-mail:">
-        <input type="password" required placeholder="Пароль">
+      <form action="{{route('login')}}" method="POST">
+        @csrf
+        <input name="email" type="email" required placeholder="Ваш e-mail:">
+        <input name="password" type="password" required placeholder="Пароль">
         <a href="">Забыли пароль?</a>
         <a href=""> Регистрация</a>
         <button type="submit">Войти</button>
@@ -152,18 +162,20 @@
     <div class="modal-inner">
       <span class="close close2">&times;</span>
       <h2>Регистрация</h2>
-      <form action="" class="reg">
-        <input type="email" required placeholder="ФИО:">
-        <input type="email" required placeholder="Ваш телефон:">
-        <input type="email" required placeholder="Ваш e-mail:">
-        <input type="password" required placeholder="Пароль">
+      <form action="{{route('register')}}" method="POST" class="reg">
+        @csrf
+        <input name="name"  type="text" required placeholder="ФИО:">
+        <input name="phone" type="phone" required placeholder="Ваш телефон: +380...">
+        <input name="email" type="email" required placeholder="Ваш e-mail:">
+        <input name="password" type="password" required placeholder="Пароль">
+        <input name="password_confirmation" type="password" required placeholder="Подтвердите пароль">
         <div>
           <input type="checkbox" id="cb1"> <label for="cb1">Я согласен с <a href="#">Условиями пользованием сорвиса</a></label>
         </div>
         <div>
           <input type="checkbox" id="cb2"> <label for="cb2">Подписаться на новости и акции</label>
         </div>
-        <button type="submit">Зарегистрироваться</button>
+        <button class="reg_btn" type="submit">Зарегистрироваться</button>
       </form>
   </div>
 </div>
