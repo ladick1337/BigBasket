@@ -221,7 +221,7 @@
     <script>
         $('.js-select').nSelect();
     </script>
-    <script src="/{{asset('myassets')}}js/jq-car.js"></script> -->
+    <!-- <script src="/{{asset('myassets')}}js/jq-car.js"></script> -->
 <script src="{{asset('myassets')}}/js/main.js"></script>
   <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
 <script src="{{asset('myassets')}}/js/jquery.flexslider.js"></script>
