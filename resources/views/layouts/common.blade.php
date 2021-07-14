@@ -73,7 +73,7 @@
                         <a href="{{route('calculate')}}" class="link-calc">Расчет доставки</a>
                         <a href="{{route('faq')}}" class="link-support">Помощь</a>
                     </div>
-                    <a href="{{route('openShop')}}" class="btn btn--orange">Заказ по ссылке</a>
+                    <a href="{{route('request')}}" class="btn btn--orange">Заказ по ссылке</a>
                 </div>
             </div>
         </div>

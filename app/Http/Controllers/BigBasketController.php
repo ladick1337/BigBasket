@@ -70,6 +70,10 @@ class BigBasketController extends Controller
         return view('front.zakaz');
     }
 
+    public function takeRequest(Request $req) {
+       return view('front.request', ['link' => $req->link]);
+    }
+
     public function sendMail(Request $req){
         $name = $req->name;
         $email = $req->email;

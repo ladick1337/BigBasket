@@ -8,16 +8,28 @@
   <p class="d-hidden sec-ti">Заполните форму и мы выставим вам счет в течении 1 рабочего часа</p>
 
           <div class="tabs">
-            <div class="tabs__nav">
+            <!-- <div class="tabs__nav">
                 <a class="tabs__link tabs__link_active" href="#content-1">Быстро</a>
                 <a class="tabs__link" href="#content-2">С расчетом</a>
-            </div>
+            </div> -->
             <div class="tabs__content">
                 <div class="tabs__pane tabs__pane_show" id="content-1">
 
                     <form action="">
                         <div id="my_field1">
                           <h2>Шаг 1. Добавьте ссылку на товар </h2>
+
+                        @if(isset($link))
+                        <div class="rows">
+                          <div class="col-md-7">
+                              <input type="text" class="req-i" placeholder="Вставьте ссылку, например https://www.amazon.com/dp/B0844JKGSK/" value="{{$link}}">
+                          </div>
+                          <div class="col-md-5">
+                              <input type="text" class="req-i" placeholder="Укажите цвет, размер, кол-во, модель.">
+                          </div>
+                        </div>
+                        @endif
+
                         <div class="rows">
                             <div class="col-md-7">
                                 <input type="text" class="req-i" placeholder="Вставьте ссылку, например https://www.amazon.com/dp/B0844JKGSK/">

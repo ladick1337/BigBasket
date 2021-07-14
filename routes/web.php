@@ -55,3 +55,5 @@ Route::get('/my-adress', 'BigBasketController@myAdress')->name('myAdress');
 Route::get('/tovar', 'BigBasketController@tovar')->name('tovar');
 
 Route::get('/zakaz', 'BigBasketController@zakaz')->name('zakaz');
+
+Route::get('/take-request', 'BigBasketController@takeRequest')->name('takeRequest');
