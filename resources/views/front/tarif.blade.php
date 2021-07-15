@@ -76,7 +76,7 @@
                     <p class="e-price-list__item e-price-list__item--separate-plus"><span>10$</span> <i>Наша комиссия (10%)</i></p>
                     <p class="e-price-list__item e-price-list__item--separate-is"><span>115$</span> <i>Итого, с доставкой в Украину</i></p>
                 </div>
-                <a href="#" class="advantage-section__btn tarif-btn btn btn--blue-gradient" data-aos="fade-down">Получить рассчет стоимости заказа</a>
+                <a href="{{route('request')}}" class="advantage-section__btn tarif-btn btn btn--blue-gradient" data-aos="fade-down">Получить рассчет стоимости заказа</a>
             </div>
         </div>
     </section>
