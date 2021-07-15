@@ -6,7 +6,7 @@
                 <a class="link-form-tab__item" href="{{route('ebay')}}">Каталог еВау</a>
                 <a class="link-form-tab__item" href="{{route('mf')}}">Получить адрес в США</a>
             </div>
-            <form class="link-form" action="{{route('takeRequest')}}">
+            <form class="link-form" action="{{route('request')}}">
                 <input  class="link-form__input" type="text" name="link" id="link" placeholder="Вставьте ссылку, например https://www.amazon.com/dp/B0844JKGSK/">
                 <button class="link-form__btn btn btn--orange" type="submit">Заказать этот товар</button>
             </form>

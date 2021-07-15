@@ -9,10 +9,6 @@ use Illuminate\Support\Facades\Hash;
 
 class BigBasketController extends Controller
 {
-    
-    public function takeRequest(Request $req) {
-       return view('front.request', ['link' => $req->link]);
-    }
 
     public function sendMail(Request $req){
         $name = $req->name;
@@ -30,14 +26,8 @@ class BigBasketController extends Controller
     }
 
     public function changeProfile(Request $req) {
-
-
         if(Hash::make($req->oldpassword) == User::where('id', Auth::user()->password)) {
             
         }
-
-        
-
-        
     }
 }

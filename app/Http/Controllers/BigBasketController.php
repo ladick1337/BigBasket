@@ -47,8 +47,12 @@ class BigBasketController extends Controller
         return view('front.open-shop', ['logged' => Auth::check()]);
     }
 
-    public function request(){
-        return view('front.request', ['logged' => Auth::check()]);
+    public function request(Request $req){
+        $vars = [
+            'logged' => Auth::check(),
+            'link' => $req->link
+        ];
+        return view('front.request', $vars);
     }
 
     public function reviews(){
@@ -75,25 +79,4 @@ class BigBasketController extends Controller
         return view('front.profile', ['logged' => Auth::check()]);
     }
 
-
-
-
-    public function takeRequest(Request $req) {
-       return view('front.request', ['link' => $req->link]);
-    }
-
-    public function sendMail(Request $req){
-        $name = $req->name;
-        $email = $req->email;
-        $message = $req->message;
-        $to = "sales@big-basket.net";
-        
-        $finmessage = $name . " оставил сообщение:\n" . $message;
-        $subject = "Обратная связь: вопрос клиента";
-        $headers = "From:" . $email;
-
-        mail($to, $subject, $finmessage, $headers);
-
-        return view('front.contacts');
-    }
 }

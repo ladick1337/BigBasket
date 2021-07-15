@@ -16,8 +16,6 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-Route::post('/custom-register', 'Auth\RegisterController@register')->name('custom-register');
-
 
 Route::group(['middleware'=>'auth'], function () {
 
@@ -25,6 +23,8 @@ Route::group(['middleware'=>'auth'], function () {
     Route::get('/tovar', 'BigBasketController@tovar')->name('tovar');
     Route::get('/zakaz', 'BigBasketController@zakaz')->name('zakaz');
     Route::get('/profile', 'BigBasketController@profile')->name('profile');
+
+    Route::post('/change-profile', 'ServiceController@changeProfile')->name('changeProfile');
 
 });
 
@@ -57,7 +57,4 @@ Route::get('/reviews', 'BigBasketController@reviews')->name('reviews');
 Route::get('/article', 'BigBasketController@article')->name('article');
 
 
-
-Route::get('/send-mail', 'BigBasketController@sendMail')->name('sendMail');
-
-Route::get('/take-request', 'BigBasketController@takeRequest')->name('takeRequest');
+Route::post('/send-mail', 'ServiceController@sendMail')->name('sendMail');
