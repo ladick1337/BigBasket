@@ -123,6 +123,13 @@ window.onclick = function(event) {
 
 
 
+var getaddressUSA = document.getElementsByClassName('getaddressUSA')[0];
+getaddressUSA.onclick = function() {
+    modal2.style.display = "block";
+}
+
+
+
 
 
 

@@ -8,7 +8,7 @@
                 <div class="main-description">
                     <h1 class="main-description__title" data-aos="fade-left" data-aos-delay="200">Получите бесплатно личный адрес <span>в США и Европе</span></h1>
                     <p class="main-description__sub-title" data-aos="fade-down" data-aos-delay="400">Используйте его для покупок, а мы доставим их в Украину по лучшим тарифам</p>
-                    <a href="#" class="btn btn--orange main-section__btn" data-aos="fade-down" data-aos-delay="800">Получить адрес в США</a>
+                    <a href="#" class="btn btn--orange main-section__btn getaddressUSA" data-aos="fade-down" data-aos-delay="800">Получить адрес в США</a>
                 </div>
                 <img class="main-section__front-photo" data-aos="fade-up" src="{{asset('myassets')}}/img/mf/main_section_front_img.webp" alt="">
             </div>
