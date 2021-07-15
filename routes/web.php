@@ -58,3 +58,5 @@ Route::get('/article', 'BigBasketController@article')->name('article');
 
 
 Route::post('/send-mail', 'ServiceController@sendMail')->name('sendMail');
+
+Route::post('/make-request', 'ServiceController@makeRequest')->name('makeRequest');

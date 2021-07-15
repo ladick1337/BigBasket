@@ -30,7 +30,7 @@
                 <a href="/"><img class="header-top__logo" src="{{asset('myassets')}}/img/logo_main.png" alt=""></a>
                 <div class="header-top-links">
                     <a class="header-top-links__phone"  href="tel:+0444667446">044 466 74 46</a>
-                    @if($logged)
+                    @if(Auth::check())
                     <div class="header-top-links__links">
                         <a href="{{route('zakaz')}}">Профиль</a>
                         <span>/</span>

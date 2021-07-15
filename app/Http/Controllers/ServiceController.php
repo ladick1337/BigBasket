@@ -21,9 +21,9 @@ class BigBasketController extends Controller
         $headers = "From:" . $email;
 
         mail($to, $subject, $finmessage, $headers);
-
         return view('front.contacts');
     }
+
 
     public function changeProfile(Request $req) {
         if(Hash::make($req->oldpassword) == User::where('id', Auth::user()->password)) {

@@ -15,27 +15,27 @@
             <div class="tabs__content">
                 <div class="tabs__pane tabs__pane_show" id="content-1">
 
-                    <form action="">
+                    <form id="request" action="{{route('makeRequest')}}">
                         <div id="my_field1">
                           <h2>Шаг 1. Добавьте ссылку на товар </h2>
 
                         @if(isset($link))
                         <div class="rows">
                           <div class="col-md-7">
-                              <input type="text" class="req-i" placeholder="Вставьте ссылку, например https://www.amazon.com/dp/B0844JKGSK/" value="{{$link}}">
+                              <input name="link" type="text" class="req-i" placeholder="Вставьте ссылку, например https://www.amazon.com/dp/B0844JKGSK/" value="{{$link}}">
                           </div>
                           <div class="col-md-5">
-                              <input type="text" class="req-i" placeholder="Укажите цвет, размер, кол-во, модель.">
+                              <input name="data" type="text" class="req-i" placeholder="Укажите цвет, размер, кол-во, модель.">
                           </div>
                         </div>
                         @endif
 
                         <div class="rows">
                             <div class="col-md-7">
-                                <input type="text" class="req-i" placeholder="Вставьте ссылку, например https://www.amazon.com/dp/B0844JKGSK/">
+                                <input name="link" type="text" class="req-i" placeholder="Вставьте ссылку, например https://www.amazon.com/dp/B0844JKGSK/">
                             </div>
                             <div class="col-md-5">
-                                <input type="text" class="req-i" placeholder="Укажите цвет, размер, кол-во, модель.">
+                                <input name="data" type="text" class="req-i" placeholder="Укажите цвет, размер, кол-во, модель.">
                             </div>
                         </div>
 
@@ -46,20 +46,23 @@
                            <textarea name="comment" id="" placeholder="Комментарий к заказу"></textarea>
                        </div>
 
+                      @if(!Auth::check())
                       <h2>Шаг 3. Укажите свои контакты</h2>
-                       <div class="cols">
-                           <input type="text" class="req-i2" placeholder="Ваш e-mail">
-                           <input type="text" class="req-i2" placeholder="Ваш номер телефона">
+                       <div class="cols autoreg">
+                           <input name="email" type="text" class="req-i2" placeholder="Ваш e-mail">
+                           <input name="phone" type="text" class="req-i2" placeholder="Ваш номер телефона">
                        </div>
-                       <button class="btn btn--blue-gradient" type="submit">Отправить</button>
+                       @endif
+                       <input name="combined" type="text" id="combined" hidden>
+                       <button id="submit" class="btn btn--blue-gradient" type="button">Отправить</button>
                     </form>
 
 
                 </div>
-                <div class="tabs__pane" id="content-2">
+                <!-- <div class="tabs__pane" id="content-2">
                     <form action="">
                         <div class="top-select">
-  <h2>Магазин</h2>
+                          <h2>Магазин</h2>
                           <div class="rows">
                             <div class="col-md-7">
                               <input type="text" name="" value="" placeholder="Укажите название магазина">
@@ -212,7 +215,7 @@
                        <button class="btn btn--blue-gradient" type="submit">Отправить на проверку</button>
                     </form>
                 </div>
-            </div>
+            </div> -->
         </div>
         </div>
 </main>
@@ -221,17 +224,36 @@ document.getElementById("addnew").onclick = function (){
 document.getElementById("my_field").innerHTML += "<div class=\"my_block\"><label>Значение:</label><input type=\"text\" class=\"val\" name=\"val\" value=\"1,0\" /></div>";
 }
 </script> -->
+<
 <script>
+  $(submit).click(function () {
+   
+   
+    let arr = [];
+    $(".rows").each(function () {
+      arr.push({
+        link: $(this).find('[name="link"]').val(),
+        data: $(this).find('[name="data"]').val()
+      });
+    });
+
+    $("#combined").val(JSON.stringify(arr));
+
+    $("request").submit();
+
+  });
+
+/////////////////////////////////////////////////////////
    let field1 = document.getElementById("my_field1");
  document.addEventListener("click", function(e) {
        if (e.target.className=="addnew1") {
       let label1 = document.createElement('div');
-        label1.innerHTML = '<div class="rows"><div class="col-md-7"><input type="text" class="req-i" placeholder="Вставьте ссылку, например https://www.amazon.com/dp/B0844JKGSK/"></div><div class="col-md-5"><input type="text" class="req-i" placeholder="Укажите цвет, размер, кол-во, модель."></div></div>';
+        label1.innerHTML = '<div class="rows"><div class="col-md-7"><input name="link" type="text" class="req-i" placeholder="Вставьте ссылку, например https://www.amazon.com/dp/B0844JKGSK/"></div><div class="col-md-5"><input name="data" type="text" class="req-i" placeholder="Укажите цвет, размер, кол-во, модель."></div></div>';
         field1.append(label1);
    }
  });
 </script>
-<script>
+<!-- <script>
    let field2 = document.getElementById("my_field2");
  document.addEventListener("click", function(e) {
        if (e.target.className=="addnew2") {
@@ -240,6 +262,6 @@ document.getElementById("my_field").innerHTML += "<div class=\"my_block\"><label
         field2.append(label2);
    }
  });
-</script>
+</script> -->
 
 @endsection
